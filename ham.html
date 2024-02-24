@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu animation</title>
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+
+    <div class="contai"></div>
+    <img src="user1.jpg" id="menuIcon">
+    <div class="menu-box" id="menuBox">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        let menuBox = document.getElementById("menuBox");
+        let menuIcon = document.getElementById("menuIcon");
+
+        menuIcon.onclick = function(){
+            menuBox.classList.toggle("open-menu")
+
+            if(menuBox.classList.contains("open-menu")){
+                menuIcon.src ="user2.jpg"
+            }
+            else{
+                menuIcon.src ="user1.jpg"
+            }
+        }
+    </script>
+    
+</body>
+</html>
