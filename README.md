@@ -1,2 +1,3 @@
 # Google
-It was my basic prototype for webpage
+It was my basic prototype for webpage of Event Management Company
+
